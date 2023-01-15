@@ -23,15 +23,52 @@ You're now ready to run bash commands in the VScode terminal! Proceed to step 2.
 
  
 ## *Step 2:* Remotely Connecting
-First you must navigate to the VScode terminal. Find the VScode menu (top of the application window on Windows, top of the screen on Mac). Click the button that says "Terminal" and then select the "New Terminal" option. The first command used in remotely connecting requires your CSE15L account information.
+First you must navigate to the VScode terminal. Find the VScode menu (top of the application window on Windows, top of the screen on Mac). Click the button that says "Terminal" and then select the "New Terminal" option. 
 
-![Image](vscodeSmaller.png)
-> Click [here](https://code.visualstudio.com/download) to download **VScode**. Make sure to select the download for your correct operating system.
+> The first command used in remotely connecting requires your CSE15L account information, which can be found by logging in [here](https://sdacs.ucsd.edu/~icc/index.php).
+
+Type `ssh account@ieng6.ucsd.edu` into the terminal, replacing "account" with your CSE15L account. If it's your first time connecting you'll be prompted with a message as shown in the following image.
+
+![Image](firstConnect.png)
+
+Simply type `yes` to authorize the connection to the server. The terminal will prompt you to enter your password. Type it in and press the "enter" key.
+
+![Image](loginMessage.png)
+
+If your screen looks like the image above, you're now remotely connected to the computer in the CSE basement!
+
+***NOTE:** If you input too many incorrect password attempts, you will be disconnected from the computer and will have to retry Step 2. Your screen will look like the following image:*
+
+![Image](disconnected.png)
+
+Once remotely connected to the computer, move on to Step 3.
+
 ---
 
  
 ## *Step 3:* Trying Some Commands
-In order to remotely access the CSE15L server, you need to use a **terminal**, which can be found in Visual Studio Code (VScode).   
+In this step, you'll run a few sample commands to familiarize youself with remote connection and basic bash terminal processes. Run the following commands in the order they're written:
 
-![Image](vscodeSmaller.png)
-> Click [here](https://code.visualstudio.com/download) to download **VScode**. Make sure to select the download for your correct operating system.
+* `pwd` "print working directory" - shows the current directory that you're accessing on the computer
+
+![Image](pwd.png)
+
+> The image above demonstrates that the user's working directory is `home/linux/ieng6/cs15lwi23/cs15lwi23adx`.
+
+* `cd` "change directory" - changes to a specific directory inputted after the command
+
+![Image](cd.png)
+
+> The image above shows that the user is switching directories to `/home/linux/ieng6/cs15lwi23`.
+
+* `ls` "list" - shows the files contained in the current directory that's being accessed
+
+![Image](ls.png)
+
+> The image above shows all of the files in the `cs15lwi23` folder.
+
+#### A list of other basic bash commands you can try can be found [here](https://www.educative.io/blog/bash-shell-command-cheat-sheet).
+
+---
+
+**This concludes the tutorial!** Type `exit` when you're ready to disconnect from the computer.
