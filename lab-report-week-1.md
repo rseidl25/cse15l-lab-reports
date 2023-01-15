@@ -51,21 +51,24 @@ In this step, you'll run a few sample commands to familiarize youself with remot
 
 * `pwd` "print working directory" - shows the current directory that you're accessing on the computer
 
+> The image below demonstrates that the user's working directory is `home/linux/ieng6/cs15lwi23/cs15lwi23adx`.
+
 ![Image](pwd.png)
 
-> The image above demonstrates that the user's working directory is `home/linux/ieng6/cs15lwi23/cs15lwi23adx`.
 
 * `cd` "change directory" - changes to a specific directory inputted after the command
 
+> The image below shows that the user is switching directories to `/home/linux/ieng6/cs15lwi23`.
+
 ![Image](cd.png)
 
-> The image above shows that the user is switching directories to `/home/linux/ieng6/cs15lwi23`.
 
 * `ls` "list" - shows the files contained in the current directory that's being accessed
 
+> The image below shows all of the files in the `cs15lwi23` folder.
+
 ![Image](ls.png)
 
-> The image above shows all of the files in the `cs15lwi23` folder.
 
 #### A list of other basic bash commands you can try can be found [here](https://www.educative.io/blog/bash-shell-command-cheat-sheet).
 
