@@ -2,7 +2,7 @@
 #### Written by: Ryan Seidl *(Wed. 3pm, B260)*
 ---
 ## *Part 1:* StringServer
-For this part, I wrote a web server program **StringServer** that displays a list of strings that the user is able to add through URL requests. **StringServer** uses the prewritten **Server.java** file from Lab 2 in order to be hosted as a web server.
+For this part, I wrote a web server program called **StringServer** that displays a list of strings that the user is able to add through URL requests. **StringServer** uses the prewritten **Server.java** file from Lab 2 in order to host a web server.
 
 Below is the code for the **StringServer** program:
 
@@ -78,7 +78,7 @@ The following are two demos of `StringServer` as well as their corresponding exp
 
 ---
 ## *Part 2:* Bug Fixing
-In this part, I will be analyzing a bug in the `ReverseInPlace` method in `ArrayExamples.java`.
+In this part, I will be analyzing a bug in the `reverseInPlace` method in `ArrayExamples.java`.
 
 ### **Failure-inducing Input:**
 ```
@@ -104,15 +104,17 @@ In this part, I will be analyzing a bug in the `ReverseInPlace` method in `Array
   }
 ```
 
-### **Symptom**
+### **Symptom:**
 
 Failure-inducing input:
+
 ![Image](failTest.png)
 
 Working input:
+
 ![Image](workingTest.png)
 
-### **The Bug**
+### **The Bug:**
 
 Original code:
 
@@ -152,4 +154,4 @@ The bug in `reverseInPlace` was that the for loop was overwriting the values of 
 ---
 ## *Part 3:* What I Learned
 
-During the lab in week 3, I learned how to use JUnit tests in order to test a program for bugs. Prior to this week, I was wondering why it was necessary to import the JUnit and Hamcrest libraries in Visual Studio Code, but now I recognize that these are required in order to utilize the aforementioned test classes. The week 3 lab activities demonstrated to me that JUnit tests are much more simple and structured ways of identifying and fixing bugs in a Java program in comparison to other methods such as printing to the console and manually trying to find where a program is failing.
+During the lab in week 3, I learned how to use JUnit tests in order to test a program for bugs. Prior to this week, I was wondering why it was necessary to import the JUnit and Hamcrest libraries in Visual Studio Code, but now I recognize that these are required in order to utilize the aforementioned test methods. The week 3 lab activities demonstrated to me that JUnit tests are much more simple and structured ways of identifying and fixing bugs in a Java program in comparison to other methods such as printing to the console and manually trying to find where a program is failing.
