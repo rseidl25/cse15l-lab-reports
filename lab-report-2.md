@@ -64,6 +64,8 @@ class StringServer {
 
 The following are two demos of `StringServer` as well as their corresponding explanations:
 
+
+
 ![Image](ssEx1.png)
 #### Example 1: `/add-message?s=Hello`
 * The method called in this example is `handleRequest`.
