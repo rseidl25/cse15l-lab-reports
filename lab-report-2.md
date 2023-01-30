@@ -80,7 +80,7 @@ The following are two demos of `StringServer` as well as their corresponding exp
 ## *Part 2:* Bug Fixing
 In this part, I will be analyzing a bug in the `ReverseInPlace` method in `ArrayExamples.java`.
 
-**Failure-inducing input:**
+**Failure-inducing Input:**
 ```
   @Test
   public void testReverseInPlaceMultipleValues(){
@@ -92,7 +92,29 @@ In this part, I will be analyzing a bug in the `ReverseInPlace` method in `Array
   }
 ```
 
-**Working input:**
+**Working Input:**
+```
+  @Test
+  public void testReverseInPlace(){
+
+    int[] input = {3};
+    ArrayExamples.reverseInPlace(input);
+    assertArrayEquals(new int[]{3}, input);
+    
+  }
+```
+
+**Symptom**
+Failure-inducing input:
+![Image](failTest.png)
+
+Working input:
+![Image](workingTest.png)
+
+**The Bug**
+
+Original code:
+
 ```
   @Test
   public void testReverseInPlaceMultipleValues(){
@@ -104,19 +126,8 @@ In this part, I will be analyzing a bug in the `ReverseInPlace` method in `Array
   }
 ```
 
-**Failure-inducing input:**
-```
-  @Test
-  public void testReverseInPlaceMultipleValues(){
+Working code:
 
-    int[] multipleValueInput = {10, 8, 6, 4, 2, 0};
-    ArrayExamples.reverseInPlace(multipleValueInput);
-    assertArrayEquals(new int[]{0, 2, 4, 6, 8, 10}, multipleValueInput);
-    
-  }
-```
-
-**Failure-inducing input:**
 ```
   @Test
   public void testReverseInPlaceMultipleValues(){
