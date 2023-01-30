@@ -80,7 +80,7 @@ The following are two demos of `StringServer` as well as their corresponding exp
 ## *Part 2:* Bug Fixing
 In this part, I will be analyzing a bug in the `ReverseInPlace` method in `ArrayExamples.java`.
 
-**Failure-inducing Input:**
+### **Failure-inducing Input:**
 ```
   @Test
   public void testReverseInPlaceMultipleValues(){
@@ -92,7 +92,7 @@ In this part, I will be analyzing a bug in the `ReverseInPlace` method in `Array
   }
 ```
 
-**Working Input:**
+### **Working Input:**
 ```
   @Test
   public void testReverseInPlace(){
@@ -104,24 +104,24 @@ In this part, I will be analyzing a bug in the `ReverseInPlace` method in `Array
   }
 ```
 
-**Symptom**
+### **Symptom**
+
 Failure-inducing input:
 ![Image](failTest.png)
 
 Working input:
 ![Image](workingTest.png)
 
-**The Bug**
+### **The Bug**
 
 Original code:
 
 ```
-  @Test
-  public void testReverseInPlaceMultipleValues(){
-
-    int[] multipleValueInput = {10, 8, 6, 4, 2, 0};
-    ArrayExamples.reverseInPlace(multipleValueInput);
-    assertArrayEquals(new int[]{0, 2, 4, 6, 8, 10}, multipleValueInput);
+  static void reverseInPlace(int[] arr) {
+  
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
     
   }
 ```
@@ -129,12 +129,27 @@ Original code:
 Working code:
 
 ```
-  @Test
-  public void testReverseInPlaceMultipleValues(){
+   static void reverseInPlace(int[] arr) {
+    
+    int[] tempArray = new int[arr.length];
+    for(int j=0; j<arr.length; j++){
 
-    int[] multipleValueInput = {10, 8, 6, 4, 2, 0};
-    ArrayExamples.reverseInPlace(multipleValueInput);
-    assertArrayEquals(new int[]{0, 2, 4, 6, 8, 10}, multipleValueInput);
+      int currentValue = arr[j];
+      tempArray[j] = currentValue;
+
+    }
+
+    for(int i = 0; i < arr.length; i++) {
+      arr[i] = tempArray[arr.length - i - 1];
+    }
     
   }
 ```
+
+The bug in `reverseInPlace` was that the for loop was overwriting the values of the initial array when attempting to reverse it. In order to fix this bug, I created a temporary array containing the values of the initial array. This allowed the for loop to copy items from the temporary array to the initial array in reverse order without overwriting any of the values.
+
+
+---
+## *Part 3:* What I Learned
+
+During the lab in week 3, I learned how to use JUnit tests in order to test a program for bugs. Prior to this week, I was wondering why it was necessary to import the JUnit and Hamcrest libraries in Visual Studio Code, but now I recognize that these are required in order to utilize the aforementioned test classes. The week 3 lab activities demonstrated to me that JUnit tests are much more simple and structured ways of identifying and fixing bugs in a Java program in comparison to other methods such as printing to the console and manually trying to find where a program is failing.
