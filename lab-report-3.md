@@ -3,7 +3,7 @@
 ##### *Standard Syntax:* `grep [OPTION] pattern [FILE]`
 ---
 ### Option 1: `-w`
-#### Returns lines containing the *exact* matching word
+#### Returns lines containing the *exact* matched word
 
 ➡️**Example 1:**
 
@@ -81,7 +81,7 @@ skill-demo1-data/written_2/travel_guides/berlitz2/California-WhereToGo.txt:The n
 Explanation:
 > This command searches through every file in every subdirectory of `skill-demo1-data/` and returns the lines in
 > `.txt` files where the string *"Big Sur"* is contained. This command is useful because it provides a quick way to check
-> if certain directory contains information on a certain subject in any of its subdirectories.
+> if a certain directory contains information on a certain subject in any of its subdirectories.
 
 ➡️**Example 2:**
 
@@ -185,7 +185,7 @@ San Diego’s beaches are truly beautiful and remarkably unspoiled, stretching f
 
 Explanation:
 > This command searches the `California-WhereToGo.txt` file for the word *"ocean"*, disregarding `case`. In this case,
-> the `.txt` file refers to the ocean itself as well as the Pacific Ocean, so using the `-i` option returns all of the 
+> the `.txt` file refers to the ocean itself as well as Ocean Beach, so using the `-i` option returns all of the 
 > lines that contain the word.
 
 ➡️**Example 2:**
@@ -193,17 +193,38 @@ Explanation:
 Input: 
 
 ```
-
+grep -i "Water" skill-demo1-data/written_2/travel_guides/berlitz2/California-WhereToGo.txt
 ```
 
 Output: 
 
 ```
-
+San Franciscans are quite unashamedly in love with their town. Its natural setting, nestled in the hills around the bay, makes the city uncommonly cozy; the zip in the air is invigorating, and even the fog that rolls in off the ocean seems more romantic than chilling. If you have a car, one way to begin your visit is to travel along 49-Mile Drive, which provides a comprehensive tour of the main sights. You’ll need to use a good map, as the blue signposts with a white seagull in the center can be difficult to locate. Stop off at Twin Peaks (the road to get there starts near the southern end of Market Street) for an excellent panoramic view of the city and the bay, then park the car, put on a pair of comfortable walking shoes, and take to the city’s first-class public transport system (see page 120).
+Start at the bridge. The city has more than one, but the one is, of course, the Golden Gate Bridge. The name Golden Gate was given to the city’s harbor entrance in 1846 by Captain John Frémont, but the mile-wide channel lay unspanned until the bridge, a masterpiece of engineering by Joseph Strauss, was completed in 1937. At 4,200 ft (1,280 m), it was the world’s longest single span until New York’s Verrazano Narrows Bridge surpassed it in 1964, but few would deny that it remains the most beautiful suspension bridge in the world. It took four years and $35 million to build; more than 40 million vehicles now cross over the span every year. You can take a bus to the bridge entrance and then walk across — it’s just as exciting an urban adventure as climbing up the Eiffel Tower or the Empire State Building. The bridge trembles underneath your feet, and the lamp-posts rattle as the wind whistles through swooping cables. But don’t worry — the 746-ft- (227-m-) high towers are well embedded in earthquake-proof foundations.
+Visible in the distance is the San Francisco–Oakland Bay Bridge, known locally as just the Bay Bridge. This silver-gray structure swings across to Oakland via two suspension spans, a cantilever span, and a tunnel through Treasure Island. It’s the bridge you’ll take to go to Berkeley (see page 40) and is one of the routes to the wine country of Napa and Sonoma (see page 41).
+Of the many cruises you can take on San Francisco Bay, the most entertaining is a trip to the abandoned prison island of Alcatraz. The name is a distortion of the Spanish Isla de Alcatraces (Pelican Island). National Park Rangers offer informative and witty self-guided audio tours around the former home of Al Capone as well as other convicts such as Robert Stroud, the famous “Birdman of Alcatraz.”
+It is worth climbing to the top of Telegraph Hill for the view of the bay from the top of Coit Tower, built in 1934 to honor the city’s fire department. One of San Francisco’s many landmarks, its shape is not meant to resemble the nozzle of a fire hose, as is so often reported. Inside you will find Socialist Realist murals depicting “Life in California, 1934.” Take a look at the cottages and gardens around the Greenwich Steps, clinging to the steep slope overlooking the bay — this is one of the city’s most desirable addresses.
+Head down to Montgomery Street, the heart of San Francisco’s financial district, also known as the “Wall Street of the West.” This area was founded on the profits of the 1849 Gold Rush (see page 16), and is now bristling with skyscrapers of chrome and glass. Take a look at the Old Coin and Gold Exhibit at the Bank of California (400 California Street), with its collection of gold coins and currency, or the Wells Fargo History Room in the Wells Fargo Bank (420 Montgomery Street), which displays Gold Rush memorabilia, including one of the original Wells Fargo stagecoaches. You’re not likely to miss the Transamerica Pyramid, a 853-ft- (256-m-) tall building with a 212-ft (64-m) spike, at the corner of Montgomery and Washington. It’s one of those buildings that purists start off hating because it clashes with the “spirit” of San Francisco, and then defend in the next generation as the very epitome of its age. If it’s time for lunch or dinner, head to Belden Alley (between Bush, Pine, Kearny, and Montgomery streets), where you’ll find an entire block of excellent restaurants, all with outdoor seating
+The highway continues on to Point Reyes National Seashore, a large wilderness park on the coast, complete with beautiful rolling hills, sandy bays, and exciting wild surf. Find maps and hiking recommendations at the Bear Valley Visitor Center. Explore the bird-haunted lagoon at Drake’s Bay, a peaceful cove where Francis Drake claimed California for England in 1579, or hike your way through the Earthquake Trail, a path that follows the San Andreas Fault. The tiny burg of Point Reyes Station across the little bridge on Petaluma Road contains some good restaurants and an excellent spot for gourmet take-out, Tomales Bay Foods on Fourth Street.
+Take the BART subway from Market Street or drive across the Bay Bridge to make a pilgrimage to the University of California campus at Berkeley (pronounced BIRK-lee), the scene of 1960s student radicalism. Opened in 1873, Berkeley is the oldest of the University of California’s nine campuses. Tours of the museums, library, gardens, and other sights are organized from the Student Union at the end of Telegraph Avenue (Monday–Saturday at 10am). The free and easy access to the university’s facilities will give you an insight into Berkeley’s open personality. The nearby streets are lined with lively cafés and interesting bookshops. If you’re driving, head over to Fourth Street for good food and prodigious shopping and people-watching.
+The coastal highway south from Carmel to Big Sur is only 30 miles (48 km) long, but it takes more than an hour of careful driving. Squeezed in between the Pacific and the Santa Lucia mountains, the road twists and turns along a quite narrow ledge hacked out high above the pounding surf, with spectacular bridges spanning the deep canyons.
+Beyond San Simeon the rugged coastline begins to relent, and farms and oil rigs take the place of crags and canyons. Rural Route 1 joins the multi-lane US Highway 101 at San Luis Obispo for the final leg to Los Angeles, but two places are worth a detour from the freeway.
+On State Street, which runs from the beach up through the center of town, you’ll find a thriving downtown filled with stores, theaters, and restaurants. In particular, take a peek at the Arlington Theater; the inside was designed to mimic a Spanish-style courtyard at dusk, including a star-filled sky. There’s history on display, too, at Mission Santa Barbara (corner of Laguna and Mission streets). The mission, which was founded on 4 December 1786, the Feast of St. Barbara, offers a self-guided tour of its restored church and outbuildings. Also worth a visit is the beautiful Santa Barbara County Courthouse — a magnificent Spanish-Moorish–style edifice dating from 1927.
+L.A. covers such an immense area that the first-time visitor can easily feel overwhelmed. The best way to approach the city is to break it down into smaller regions and then take them one at a time — Downtown, Hollywood, Westside, the Coast, the Valleys, and Orange County.
+While you’re on the north side of town, take a drive around the Hollywood Hills for a superb view of the city. The classic Los Angeles cruise is along Mulholland Drive. On a clear day you can see Long Beach, 25-miles (40-km) away across the vast, sprawling metropolis.
+Rodeo Drive (pronounced Ro-DAY-oh) is the famous shopping street (if you saw the movie Pretty Woman, you’ve seen Rodeo Drive) and it’s just as upscale and sophisticated as advertised. If you’re visiting in the summer or around Christmas, take a half-hour guided tour on the sweet Beverly Hills Trolley for $1. Meet the trolley on the corner of Rodeo and Dayton Way — it’s the only bargain you’ll find in the neighborhood.
+One of the most enjoyable is a tour of the film and television studios located in the San Fernando Valley. Two major TV networks — CBS and NBC — welcome you onto their sets for a look behind the scenes at some of America’s most popular TV shows. A limited number of tickets to live shows are available. Universal Studios Hollywood, just north of the Hollywood Freeway (either the Universal Center Drive or the Lankershim Boulevard exits), offers an elaborate tour in open trams. In the course of displays of special-effects trickery you’ll be attacked by the shark from Jaws, meet up with a three-story-tall King Kong, and be subjected to all the earthquakes, floods, and fires you ever saw in a disaster movie. You can also take a look behind the scenes and learn about techniques that are used to create film’s great illusions. The highlight is the Back To The Future ride. Seated in a flight simulator shaped like the famous time-traveling DeLorean car in the films, you will be taken on a hair-raising chase through time and space.
+One of the best ways to appreciate San Diego’s sparkling beauty is from the sea. You can take a cruise along the bay — boat trips leave from Harbor Drive, just south of the Maritime Museum — out past the man-made Harbor and Shelter Islands and around the tip of the Coronado peninsula (occupied by a US Naval Air Station — the film Top Gun was set nearby in northern San Diego) to Point Loma out on the Pacific coast. The seemingly endless procession of fishing boats, yachts, and US Navy vessels makes for a fascinating tour.
+The highlight of the park is the San Diego Zoo, one of the finest in the world. Established in 1922, the zoo was a pioneer in the use of moats, ravines, rocks, and embankments rather than bars and cages, giving the animals as large, free, and natural a living space as possible. It is famous for its Sumatran tigers and Malaysian sun bears as well as a colony of koala bears — the only breeding population outside Australia. You can enjoy a bird’s-eye view of the zoo from the Skyfari aerial tramway, or take a guided tour bus. An extension of the zoo is located 30 miles (48 km) north at the San Diego Wild Animal Park in Escondido, where 2,500 animals, including zebra, lions, elephants, cheetahs, and rhinoceros, roam freely.
+The scenic Yosemite Valley is a perfect example of a glacier-carved canyon, with its sheer granite walls 3,200ft (975m) high plunging to a flat floor of woods and wild-flower meadows, enclosing the waters of the Merced River. Your “base camp” could be a plush hotel room, more modest lodge accommodation, or even just a tent. From the valley meadows you can hike, bike (rentals at Yosemite Lodge or Curry Village), or take the shuttle bus to all the principal sights. 
+The crazed and pinnacled surface of the salt-caked lake bed has earned it the nickname of Devil’s Golf Course. Take a walk out across that glaring expanse of baked salt — the atmosphere of desolation is almost exhilarating. If you look closer at the salt under your feet, you’ll discover that the expansion of the crystallizing mineral has heaved it into bizarre funnels, swirls, and other intricate patterns.
+At the northern boundary of Death Valley, 52 miles (84 km) from Furnace Creek, lies the remarkable Scotty’s Castle, a luxuriously furnished 1920s Spanish-style mansion that rises improbably from the bed of Grapevine Canyon. It was built for a Chicago millionaire, Albert Johnson, who spent his winters prospecting for gold with his partner and friend, Walter Scott, known to all as “Death Valley Scotty.” Guided tours take you round the lavish interior; you can wander the grounds at will. Nearby lies Ubehebe Crater, the spectacular result of a volcanic explosion. A short trail leads to the floor of the crater.
 ```
 
 Explanation:
->
+> Similar to example 1, this command ignores case and returns every line in `California-WhereToGo.txt` that
+> contains the word *"take"*. Of the 20 lines returned, 4 of them contain the word capitalized at the start 
+> of a sentence, so this option is helpful in avoiding this issue when returning an accurate word count.
 
 
 #### Sources Used
