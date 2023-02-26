@@ -63,7 +63,7 @@ Explanation:
 ### Option 2: `-R`
 #### Performs a *recursive* search through all *subdirectories*
 #### NOTE: 
-1. A recursive `grep` search means to use the same command repeatedly through all subdirectories of the inputted directory. The command will then output each file where the inputted pattern is found through all subdirectories searched.
+1. A recursive `grep` search means to use the same command repeatedly through all subdirectories of the inputted directory and their subdirectories, and so on. The command will then output each file where the inputted pattern is found through all subdirectories searched.
 2. `grep -r` will perform a recursive search and will only follow the symbolic link inputted in the command-line. `grep -R` will also perform a resursive search, but is slightly different in that it will follow any symbolic links it encounters, no matter if they're in the command-line or not. (A symbolic link is a file created in order to serve as a shortcut to another file).
 
 ➡️**Example 1:**
