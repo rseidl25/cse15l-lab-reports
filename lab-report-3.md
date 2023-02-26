@@ -56,12 +56,15 @@ Explanation:
 
 #### Sources Used
 * I used the `grep` manual by typing `grep --help` in the VSCode terminal.
-* https://www.geeksforgeeks.org/grep-command-in-unixlinux/
-* https://www.makeuseof.com/grep-command-practical-examples/
+* [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+* [https://www.makeuseof.com/grep-command-practical-examples/](https://www.makeuseof.com/grep-command-practical-examples/)
 
 ---
 ### Option 2: `-R`
 #### Performs a *recursive* search through all *subdirectories*
+#### NOTE: 
+1. A recursive `grep` search means to use the same command repeatedly through all subdirectories of the inputted directory. The command will then output each file where the inputted pattern is found through all subdirectories searched.
+2. `grep -r` will perform a recursive search and will only follow the symbolic link inputted in the command-line. `grep -R` will also perform a resursive search, but is slightly different in that it will follow any symbolic links it encounters, no matter if they're in the command-line or not. (A symbolic link is a file created in order to serve as a shortcut to another file).
 
 ➡️**Example 1:**
 
@@ -109,7 +112,8 @@ Explanation:
 
 #### Sources Used
 * I used the `grep` manual by typing `grep --help` in the VSCode terminal.
-* https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+* [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
+* [https://www.futurelearn.com/info/courses/linux-for-bioinformatics/0/steps/201767#:~:text=A%20symlink%20is%20a%20symbolic,directory%20in%20any%20file%20system.](https://www.futurelearn.com/info/courses/linux-for-bioinformatics/0/steps/201767#:~:text=A%20symlink%20is%20a%20symbolic,directory%20in%20any%20file%20system.)
 
 ---
 ### Option 3: `-n`
@@ -157,7 +161,7 @@ Explanation:
 
 #### Sources Used
 * I used the `grep` manual by typing `grep --help` in the VSCode terminal.
-* https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+* [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 ---
 ### Option 4: `-i`
@@ -229,6 +233,6 @@ Explanation:
 
 #### Sources Used
 * I used the `grep` manual by typing `grep --help` in the VSCode terminal.
-* https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+* [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
 ---
