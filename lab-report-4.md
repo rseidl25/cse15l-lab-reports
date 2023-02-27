@@ -19,8 +19,7 @@ previously set up an SSH Key for Github on my ieng6 account, so I'm able to clon
 ![Image](step5-2.png)
 
 4. Back in the terminal window, I typed `git clone ` then pressed `<ctrl-V>` to paste the `SSH address` from my
-machine's clipboard. 
-5. I pressed `<enter>` to run the command.
+machine's clipboard and finally pressed `<enter>` to run the command.
 
 ---
 ## *Step 6:* Run the tests, demonstrating that they fail
