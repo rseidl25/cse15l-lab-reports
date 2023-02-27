@@ -90,4 +90,3 @@ bash history, so to access and run it I pressed `<up><up><up><enter>`.
 the command line `git add ListExamples.java` and pressed `<enter>`.
 2. To commit the file, I typed `git commit -m Updated` and pressed `<enter>`. I wrote `Updated`, but you can use any commit message here.
 3. Now that the change was committed, I pushed it to my Github account by typing `git push origin` followed by `<enter>`.
-
