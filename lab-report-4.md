@@ -62,7 +62,7 @@ I pressed `<space>` and typed `L<tab>T<tab><backspace>` to make the command line
 * The error in the code is found in the last `while` loop in the `merge` method. To navigate here, I typed
 `<ctrl-w>while<enter><ctrl-w>while<enter><ctrl-w>while<enter>`. These commands allowed me to search for the string "while" until I got to the third while loop.
 * The exact error is that `index1` in this loop needs to be `index2`. To get to this line, I typed 
-`<down><down>` to move down 2 lines and to get to the character I needed to change, I typed 
+`<down><down>` to move down 2 lines and to get to the character I needed to change, I typed `<right><right><right><right><right><right><right><right>` to move 8 characters to the right.
 * To fix the error, I pressed `<backspace>` and then typed `2`.
 * I pressed `<ctrl-O><enter>` to save these changes and then pressed `<ctrl-X>` to exit `nano`.
 
