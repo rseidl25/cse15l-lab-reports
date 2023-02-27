@@ -15,9 +15,9 @@ pressed `<enter>` to enter the URL and access my repository.
 2. I clicked on the green `Code` button and then clicked `SSH` under the `Clone` option. Again, I had
 previously set up an SSH Key for Github on my ieng6 account, so I'm able to clone using `SSH` instead of `HTTPS`.
 3. I copied the `SSH address` to my machine's clipboard by clicking the button with the two intersecting squares located directly beside the address. 
- 
+
 ![Image](step5-2.png)
- 
+
 4. Back in the terminal window, I typed `git clone ` then pressed `<ctrl-V>` to paste the `SSH address` from my
 machine's clipboard and finally pressed `<enter>` to run the command. This created a clone of my fork of the Lab 7 repository in my ieng6 account.
 
