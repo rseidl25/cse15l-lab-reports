@@ -4,9 +4,7 @@
 ---
 ## *Step 4:* Log into ieng6
 ![Image](step4.png)
-1. To log into my ieng6, account I typed `ssh cs15lwi23adx@ieng6.ucsd.edu` followed by `<enter>`. Since I had previously 
-set up an SSH Key for ieng6 on my machine, I wasn't prompted to type my ieng6 account password, 
-but if you haven't set up an SSH Key then you will have to login using your password.
+1. To log into my ieng6, account I typed `ssh cs15lwi23adx@ieng6.ucsd.edu` followed by `<enter>`. Since I had previously set up an SSH Key for ieng6 on my machine, I wasn't prompted to type my ieng6 account password, but if you haven't set up an SSH Key then you will have to login using your password.
 
 ---
 ## *Step 5:* Clone your fork of the repository from your Github account
@@ -16,8 +14,7 @@ but if you haven't set up an SSH Key then you will have to login using your pass
 pressed `<enter>` to access my repository.
 2. I clicked on the green `Code` button and then clicked `SSH` under the `Clone` option. Again, I had
 previously set up an SSH Key for Github on my ieng6 account, so I'm able to clone using `SSH` instead of `HTTPS`.
-3. I copied the `SSH address` to my machine's clipboard by clicking the button with the two intersecting squares
-located directly beside the address.
+3. I copied the `SSH address` to my machine's clipboard by clicking the button with the two intersecting squares located directly beside the address.
 
 ![Image](step5-2.png)
 
