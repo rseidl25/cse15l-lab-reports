@@ -13,7 +13,7 @@ Rather, they can enter each of these commands into the bash script once and only
 script whenever they want to do the CLDQ challenge. It can take the user's time to complete the
 challenge from over 3 minutes to under 5 seconds!
 
-The following tutoial is structured similar to Lab Report 4, however this time the code from
+The following tutorial is structured similar to Lab Report 4, however this time the code from
 each step (beginning with step 5) is added to a bash script. 
 
 ---
