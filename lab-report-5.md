@@ -46,9 +46,6 @@ machine's clipboard and finally pressed `<enter><enter><ctrl-S>` to go to a new 
 
 ---
 ## *Step 6:* Run the tests, demonstrating that they fail
-![Image](step6-1.png)
-
-* I typed `ls` then `<enter>` to find that the directory for the repository that I cloned is called `lab7`.
 
 ![Image](step26-2.png)
 
@@ -102,10 +99,21 @@ I pressed `<space>` and typed `ListExamplesTests`.
 * After the change is committed, it'll need to be pushed to my Github account, so I typed `git push origin` followed by `<ctrl-S>` to save the file.
 
 ---
-## Execute the bash script
+## Creating and executing the bash script in ieng6
+
+![Image](stepCreate.png)
+
+* To copy the bash code from the `challenge.sh` file I created locally, I pressed `<ctrl-A><ctrl-C>`.
+* In the terminal window logged into the `ieng6` account, I typed `touch challenge.sh` to create the `challenge.sh` in ieng6.
+* I typed `nano challenge.sh` to open the nano text editor for `challenge.sh` and pressed `<ctrl-V>` to paste the code I copied from the local file.
+
+![Image](stepPrompt.png)
+
+* I was prompted so confirm if I wanted to paste the code, so I clicked the `Paste` button.
+* I pressed `<ctrl-O><enter>` to save these changes and then pressed `<ctrl-X>` to exit `nano`.
 
 ![Image](stepRun.png)
 
-* In the terminal window logged into the `ieng6` account, I typed `bash challenge.sh`. This executed all commands successfully.
+* To execute the newly-created script, I typed `bash challenge.sh`. This executed all commands successfully.
 
 ---
