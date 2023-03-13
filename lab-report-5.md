@@ -23,7 +23,7 @@ each step (beginning with step 5) is added to a bash script.
 
 ---
 ## *Step 4.5:* Create new bash script
-![Image](setup.png)
+![Image](step4.5.png)
 * To create the script, I navigated to the `EXPLORER` tab
 on the left side of the VSCode window, pressed `<right-click>` on my mouse and clicked the
 `New File` option. I typed `challenge.sh` and pressed `<enter>` to create the file. I then
@@ -39,10 +39,10 @@ pressed `<enter>` to enter the URL and access my repository.
 previously set up an SSH Key for Github on my ieng6 account, so I'm able to clone using `SSH` instead of `HTTPS`.
 * I copied the `SSH address` to my machine's clipboard by clicking the button with the two intersecting squares located directly beside the address. 
 
-![Image](step5-2.png)
+![Image](step25-2.png)
 
 * Back in the `challenge.sh` editor window, I typed `git clone ` then pressed `<ctrl-V>` to paste the `SSH address` from my
-machine's clipboard and finally pressed `<enter><enter>` to go to a new line. This command will create a clone of my fork of the Lab 7 repository in my ieng6 account.
+machine's clipboard and finally pressed `<enter><enter><ctrl-S>` to go to a new line and save the file. This command will create a clone of my fork of the Lab 7 repository in my ieng6 account.
 
 ---
 ## *Step 6:* Run the tests, demonstrating that they fail
