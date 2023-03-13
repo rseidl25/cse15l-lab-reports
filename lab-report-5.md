@@ -80,12 +80,12 @@ I pressed `<space>` and typed `ListExamplesTests`.
 * In the `challenge.sh` editor window, I typed `sed '43 s/index1/index2' ListExamples.java` followed by `<enter><enter><ctrl-S>` to go to a new line and save the file.
 * NOTE: The `'n s/[1]/[2]'`option finds the occurence of the string `[1]` on `line n` and replaces it with the string `[2]`.
 
-![Image](step27.png)
+![Image](step37.png)
 
 ---
 ## *Step 8:* Run the tests, demonstrating that they now succeed
 
-![Image](step28.png)
+![Image](step38.png)
 
 * Since I had copied the compile and run commands to `challenge.sh`, I could copy and paste them again.
 * I clicked and dragged to highlight the commands on lines 5 and 7 of `challenge.sh` and pressed `<ctrl-C>` to copy them.
@@ -95,7 +95,7 @@ I pressed `<space>` and typed `ListExamplesTests`.
 ---
 ## *Step 9:* Commit and push the resulting change to your Github account
 
-![Image](step9.png)
+![Image](step39.png)
 
 * To add the edited `ListExamples.java` file to the commit, I typed `git add ListExamples.java` in the `challenge.sh` editor window and pressed `<enter><enter><ctrl-S>` to go to a new line and save the file.
 * To commit the file, I typed `git commit -m Updated` and pressed `<enter><enter><ctrl-C>` to go to a new line and save the file. I wrote `Updated`, but you can use any commit message here.
