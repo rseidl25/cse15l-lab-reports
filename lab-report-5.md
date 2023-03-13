@@ -102,5 +102,10 @@ I pressed `<space>` and typed `ListExamplesTests`.
 * After the change is committed, it'll need to be pushed to my Github account, so I typed `git push origin` followed by `<ctrl-S>` to save the file.
 
 ---
+## Execute the bash script
 
+![Image](stepRun.png)
 
+* In the terminal window logged into the `ieng6` account, I typed `bash challenge.sh`. This executed all commands successfully.
+
+---
