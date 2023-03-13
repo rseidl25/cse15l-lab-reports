@@ -77,8 +77,8 @@ I pressed `<space>` and typed `ListExamplesTests`.
 
 * The error in the code is found in the last `while` loop in the `merge` method. The `index1` in this loop needs to be `index2`.
 * To fix the failing test, you have to edit the `ListExamples.java`. To do this via a bash script, you must use the `sed` command, which stands for stream editor. This command is mostly used for substituting text by first finding an inputted string and then replacing it.
-* In the `challenge.sh` editor window, I typed `sed 's/index1 += 1;/index2 += 1;/3' ListExamples.java` followed by `<enter><enter><ctrl-S>` to go to a new line and save the file.
-* NOTE: The `'s/[1]/[2]/n'`option finds the `nth` occurence of the string `[1]` and replaces it with the string `[2]`.
+* In the `challenge.sh` editor window, I typed `sed '23 s/index1/index2' ListExamples.java` followed by `<enter><enter><ctrl-S>` to go to a new line and save the file.
+* NOTE: The `'n s/[1]/[2]'`option finds the occurence of the string `[1]` on `line n` and replaces it with the string `[2]`.
 
 ![Image](step27.png)
 
