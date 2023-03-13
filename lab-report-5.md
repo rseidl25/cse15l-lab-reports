@@ -109,7 +109,7 @@ I pressed `<space>` and typed `ListExamplesTests`.
 
 ![Image](stepPrompt.png)
 
-* I was prompted so confirm if I wanted to paste the code, so I clicked the `Paste` button.
+* I was prompted to confirm if I wanted to paste the code, so I clicked the `Paste` button.
 * I pressed `<ctrl-O><enter>` to save these changes and then pressed `<ctrl-X>` to exit `nano`.
 
 ![Image](stepRun.png)
