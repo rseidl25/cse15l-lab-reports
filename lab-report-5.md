@@ -50,10 +50,9 @@ machine's clipboard and finally pressed `<enter><enter><ctrl-S>` to go to a new 
 
 * I typed `ls` then `<enter>` to find that the directory for the repository that I cloned is called `lab7`.
 
-![Image](step6-2.png)
+![Image](step26-2.png)
 
-* To change my current directory to the newly cloned directory, I typed `cd l<tab>` to make the command line
-`cd lab7/` then `<enter>` to run the command.
+* To change the current directory to the newly cloned directory, I typed `cd lab7/` then `<enter><enter><ctrl-S>` to go to a new line and save the file.
 
 ![Image](step6-3.png)
 
@@ -63,50 +62,45 @@ I typed `https://ucsd-cse15l-w23.github.io/week/week3/` into my browser and pres
 containing the compile and run commands for the tests.
 * In this box, I clicked and dragged with my mouse to highlight the compile command: 
 `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. I then pressed `<ctrl-C>` to copy the command.
-* In the terminal window, I pasted the compile command by pressing `<ctrl-V>` and then `<enter>` to run the command.
+* In the `challenge.sh` editor window, I pasted the compile command by pressing `<ctrl-V>` and then `<enter><enter><ctrl-S>` to go to a new line and save the file.
 * Back in the `Mac Users:` box on the Week 3 lab instructions page, I clicked and dragged with my mouse to 
 highlight the run command: `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore`. 
 I again pressed `<ctrl-C>` to copy the command.
-* I returned to the terminal window and pasted the run command by pressing `<ctrl-V>`. To specify which file to run, 
-I pressed `<space>` and typed `L<tab>T<tab><backspace>` to make the command line 
-`java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`.
-* I pressed `<enter>` to run the command.
+* I returned to the `challenge.sh` editor window and pasted the run command by pressing `<ctrl-V>`. To specify which file to run, 
+I pressed `<space>` and typed `ListExamplesTests`.
+* I pressed `<enter><enter><ctrl-S>` to go to a new line and save the file.
 
-![Image](step6-4.png)
+![Image](step26-4.png)
 
 ---
 ## *Step 7:* Edit the code file to fix the failing test
 
-* To fix the failing test, I had to edit the `ListExamples.java` file by typing 
-`nano L<tab>.j<tab>` followed by `<enter>` to run the command.
+* The error in the code is found in the last `while` loop in the `merge` method. The `index1` in this loop needs to be `index2`.
+* To fix the failing test, you have to edit the `ListExamples.java`. To do this via a bash script, you must use the `sed` command, which stands for stream editor. This command is mostly used for substituting text by first finding an inputted string and then replacing it.
+* In the `challenge.sh` editor window, I typed `sed 's/index1 += 1;/index2 += 1;/3' ListExamples.java` followed by `<enter><enter><ctrl-S>` to go to a new line and save the file.
+* NOTE: The `'s/[1]/[2]/n'`option finds the `nth` occurence of the string `[1]` and replaces it with the string `[2]`.
 
-![Image](step7.png)
-
-* The error in the code is found in the last `while` loop in the `merge` method. To navigate here, I typed
-`<ctrl-w>while<enter><ctrl-w>while<enter><ctrl-w>while<enter>`. These commands allowed me to search for the string "while" until I got to the third while loop.
-* The exact error is that `index1` in this loop needs to be `index2`. To get to this line, I typed 
-`<down><down>` to move down 2 lines and to get to the character I needed to change, I typed `<right><right><right><right><right><right><right><right>` to move 8 characters to the right.
-* To fix the error, I pressed `<backspace>` and then typed `2`.
-* I pressed `<ctrl-O><enter>` to save these changes and then pressed `<ctrl-X>` to exit `nano`.
+![Image](step27.png)
 
 ---
 ## *Step 8:* Run the tests, demonstrating that they now succeed
 
-![Image](step8.png)
+![Image](step28.png)
 
-* Since I had already ran the compile and run commands, I could run them through bash history instead of 
-going through the entire process of copying and pasting them before. The compile command was 3 up in the 
-bash history, so to access it I pressed `<up><up><up>` to move up 3 lines and `<enter>` to run the command.
-* Likewise, the run command was now 3 up in the bash history, so to access it I pressed `<up><up><up>` to move up 3 lines and `<enter>` to run the command.
+* Since I had copied the compile and run commands to `challenge.sh`, I could copy and paste them again.
+* I clicked and dragged to highlight the commands on lines 5 and 7 of `challenge.sh` and pressed `<ctrl-C>` to copy them.
+* I then clicked on line 11 of `challenge.sh` and pressed `<ctrl-V>` to paste the two commands into the script.
+* I pressed `<enter><enter><ctrl-S>` to go to a new line and save the file.
 
 ---
 ## *Step 9:* Commit and push the resulting change to your Github account
 
 ![Image](step9.png)
 
-* To add the edited `ListExamples.java` file to the commit, I typed `git add L<tab>.j<tab>` to make 
-the command line `git add ListExamples.java` and pressed `<enter>`.
-* To commit the file, I typed `git commit -m Updated` and pressed `<enter>`. I wrote `Updated`, but you can use any commit message here.
-* Now that the change was committed, I pushed it to my Github account by typing `git push origin` followed by `<enter>`.
+* To add the edited `ListExamples.java` file to the commit, I typed `git add ListExamples.java` in the `challenge.sh` editor window and pressed `<enter><enter><ctrl-S>` to go to a new line and save the file.
+* To commit the file, I typed `git commit -m Updated` and pressed `<enter><enter><ctrl-C>` to go to a new line and save the file. I wrote `Updated`, but you can use any commit message here.
+* After the change is committed, it'll need to be pushed to my Github account, so I typed `git push origin` followed by `<ctrl-S>` to save the file.
 
 ---
+
+
